@@ -24,6 +24,8 @@ func insertSort (arr []int32, n int, desc bool) []int32 {
     return arr
 }
 
+
+// source: https://www.hackerrank.com/challenges/three-month-preparation-kit-maximum-perimeter-triangle/problem
 func maximumPerimeterTriangle(sticks []int32) []int32 {
     // Write your code here
     var sortedArray []int32 = insertSort(sticks, len(sticks), false)
