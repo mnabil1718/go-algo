@@ -19,6 +19,8 @@ func pageCount(n int32, p int32) int32 {
 	// Back
 	if n-p > 1 {
 		back = int32(math.Floor(float64(n-p) / 2.0))
+	} else if n%2 == 0 && n-p == 1 {
+		back = 1
 	}
 
 	if back < front {
@@ -29,6 +31,6 @@ func pageCount(n int32, p int32) int32 {
 }
 
 func main() {
-	min := pageCount(7, 4)
+	min := pageCount(6, 5)
 	fmt.Println(min)
 }
