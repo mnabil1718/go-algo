@@ -11,6 +11,17 @@ func fibo(param int) []int {
 	return sequence
 }
 
+// recursive solution
+	// if n == 0 {
+	// 	return 0
+	// }
+
+	// if n == 1 {
+	// 	return 1
+	// }
+
+	// return Fibonacci(n-1) + Fibonacci(n-2)
+
 func main() {
 
 	fmt.Println(fibo(6))
