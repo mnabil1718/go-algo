@@ -5,6 +5,7 @@ import (
 	"math/big"
 )
 
+// source: https://www.hackerrank.com/challenges/three-month-preparation-kit-recursive-digit-sum/problem
 func superDigit(n string, k int32) *big.Int {
 	sum := new(big.Int)
 	for _, letter := range n {
